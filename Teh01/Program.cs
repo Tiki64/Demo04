@@ -10,17 +10,20 @@ namespace Teh01
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Nykyinen kerros " + Floor);
-
-
-
-
-
+            Hissi hissi = new Hissi();
+            Console.WriteLine("Elevator is in now in floor: " + hissi.Floor);
+            bool result;
             do
             {
-            while
-
+                Console.Write("Give a new floor number (1-5): ");
+                string line = Console.ReadLine();
+                int number;
+                result = int.TryParse(line, out number);
+                hissi.Floor = number;
+                Console.WriteLine("Elevator is now in floor: " + hissi.Floor);
             }
+            while (result == true);
+
         }
     }
 }

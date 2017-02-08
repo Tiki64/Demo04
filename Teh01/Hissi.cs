@@ -8,24 +8,33 @@ namespace Teh01
 {
     class Hissi
     {
-        //properties
-        private int floor;
-        private int minFloor = 1;
-        private int maxFloor = 5;
-        public int Floor { get; set; }
+        private int minfloor = 1;
+        private int maxfloor = 5;
+        private int floor = 1;
 
-
-
-        if (value >= minFloor && value <= maxFloor) {
-            Floor = value
-
-        else if
+        public int Floor
         {
-        Console.WriteLine("");
-        }
-        else if
-        {
-        Console.WriteLine("");
+            get
+            {
+                return floor;
+            }
+            set
+            {
+                if (value >= minfloor && value <= maxfloor)
+                {
+                    floor = value;
+                }
+                else if (value < 1)
+                {
+                    Console.WriteLine("Floor is too small!");
+                }
+                else if (value > 5)
+                {
+                    Console.WriteLine("Floor is too big!");
+                }
+
+
+            }
         }
     }
 }

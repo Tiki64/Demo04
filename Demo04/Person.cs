@@ -17,6 +17,7 @@ namespace Demo04
         {
             Firstname = firstname;
             Lastname = lastname;
+        }
 
         public void PersonMethod()
         {
