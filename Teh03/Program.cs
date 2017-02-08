@@ -10,6 +10,7 @@ namespace Teh03
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

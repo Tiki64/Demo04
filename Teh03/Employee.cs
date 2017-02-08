@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace teht03
+{
+    class Employee
+    {
+        public string Profession { get; set; }
+        public int Salary { get; set; }
+        public string Name { get; set; }
+
+
+        public Employee()
+        {
+
+
+        }
+
+        public Employee(string name, string profession, int salary)
+        {
+            Name = name;
+            Profession = profession;
+            Salary = salary;
+        }
+
+        public override string ToString()
+        {
+            return "Name: " + Name + ", Profession: " + Profession + ", Salary: " + Salary;
+        }
+    }
+}
